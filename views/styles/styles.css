@@ -1,0 +1,2629 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    height: 100%;
+    margin-bottom: 20%;
+    margin-top:0;
+}
+
+/**************************************************************************************HEADER*****************************************************************************/
+   /* Header general */
+
+#container {
+    position:relative;
+    width:100%;
+    background:linear-gradient(rgb(103, 187, 107) , #386B41 60%);
+    box-shadow: 2px 2px 2px rgb(21, 230, 21) ,5px 5px 5px #5C7373 ;
+    margin-bottom: 40px;
+  }
+#container > nav {
+    width:100%;
+    display:flex;
+}
+#logo {
+    line-height:60px;
+    font-size:50px;
+    width:20%;
+}
+
+#logo a{
+    color: white;
+    letter-spacing:2px;
+    text-shadow:2px 2px 5px;
+}
+  
+#container img:first-child{
+    height: 40px;
+    width: 40px;
+    margin: 10px 5px 10px 70px;
+}
+  
+#container > nav > ul {
+    padding:0;
+    list-style-type:none;
+    display:flex;
+    position:absolute;
+    right:50px;
+}
+#container > nav > ul > li {
+    line-height:60px;
+    margin: 0;
+    padding:0;
+    text-align:center;
+    display:inline-block; 
+    height: 60px; 
+}
+
+.element1 , .element2 , .element3{
+    width: 140px;
+}
+.element1 a , .element2 a , .element3 a , .element4 a{
+    color:white;
+}
+
+.element1:hover , .element2:hover , .element3:hover{
+    border-bottom: 2px solid black;
+    background-color: #28B828;
+}
+
+.element4 a{
+    border-bottom: 1px solid white;
+    margin-left: 50px;
+}
+.element4:hover{
+    font-weight: bold;
+}
+
+#container > nav > ul > .element2:hover , #container > nav > ul >.usuario:hover{
+    border-bottom:none;
+}
+  
+#container > nav > ul > .element2:hover > .dd , #container > nav > ul > .usuario:hover > .mm{
+    display:block;
+} 
+.dd{
+    position:relative; z-index:1;
+}
+  
+.mm{
+    position: relative;
+    bottom: 27px;
+}
+.usuario:hover{
+    background-color: #28B828;
+}
+b{
+    position: relative;
+    bottom: 20px;
+    left: 60px;
+    font-size: 18px;
+}
+#container > nav > ul > li > div {
+    padding: 0 10px 5px 10px;
+    display:none;
+    background-color:#386B38;
+}
+  
+#container > nav > ul > li > div > ul {
+    list-style:none;
+}
+
+#desplegable {
+    position:relative;
+    width:20px;
+    height:20px;
+    left:42%;
+    top:-10px;
+    background-color:#28B828;
+    transform:rotate(45deg);
+}
+
+#container > nav > ul > li> div > ul > li{
+    margin: 0;
+    padding: 0 5px;
+}
+#container > nav > ul > li> div > ul > li:hover {
+    background-color:rgb(184, 183, 183);
+}
+#container > nav > ul > li> div > ul > li> a:hover {
+    color: black;
+    font-weight: bold;
+}
+#container > nav > ul > li > div > ul > li > a {
+    color:white;
+}
+
+#container > nav > ul > li > div > ul > li > a > p {
+    color:#008747;
+}
+
+.perfil{
+    width: 5%;
+    height: 5%;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    margin-bottom: 10px;
+}
+
+.box input{
+    border-radius: 15px;
+    padding: 5px 0;
+}
+
+.lupa{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top : 10px;
+    right: 40px;
+}
+#search{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/*************************************************************************************** FOOTER ************************************************************************************/
+footer p{
+    text-align: center;
+    color:#fff;
+    width: 90%;
+    position: relative;
+    top: 40%;
+    height: 30%;    
+}
+footer a{
+    background-color: #7a997f;
+    padding-top: 15px;
+    width: 10%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+footer{
+    bottom:0;
+    position:fixed;
+    background:linear-gradient(rgb(103, 187, 107) , #386B41 60%);
+    width:100%;
+    display: flex;
+    line-height: 50%;
+    height: 5%;
+    margin-bottom: 3px;
+    left: 0;
+}
+
+/*************************************************************************************** PARTE PRODUCTOS ************************************************************************************/
+
+a{
+text-decoration: none;
+
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#b3b4b3, #86ce94);  
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #087528;
+    font-size: 12px;
+}
+
+.submit input{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0f0f0f;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 20px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    background: rgb(202, 200, 200);
+
+}
+
+.submit input:hover {
+    background: #7CEE91;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #7CEE91,
+                0 0 25px #7CEE91,
+                0 0 50px #7CEE91,
+                0 0 100px #7CEE91;
+}
+
+.submit{
+    width: 50%;
+    margin:auto;
+}
+
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 110px auto;
+}
+
+td , th{
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+.prod{
+    text-align: center;
+    margin : 70px auto 50px auto;
+    border-bottom: 3px solid #008747;
+    width: 15%;
+}
+
+.addProd{
+    margin: 35px 0 0 20px ;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #9aee97;
+    width: 130px;
+    border:1px solid black;
+}
+
+.addProd a{
+    color: black;
+    font-weight: bold;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 75px;
+    padding-left: 127px;
+}
+
+.add{
+    border: 1px solid ;
+    display: block;
+}
+
+.pic{
+    height: 80%;
+    width: 80%;
+    border:1px solid;
+}
+
+.pict{
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+div > .pic{
+    padding:20px 70px 20px 70px;
+}
+
+.libros{
+    border: 1px solid;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.libros div:nth-child(2){
+    border-top: 1px solid;
+    text-align: center;
+}
+.alibros{
+    color: black;
+}
+
+.formAñadirLibro{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
+    margin: auto;
+}
+.formAñadirLibro div{
+    margin: 15px 0 15px 70px;
+}
+.formAñadirLibro div p{
+    margin-bottom: 5px;
+}
+.divAñadirLibro{
+    border: 1px solid black;
+    width: 40%;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(132, 202, 132, 0.842),rgb(187, 186, 186));
+}
+.divAñadirLibro h1 , .divModificarLibro h1{
+    width: fit-content;
+    margin: 20px auto;
+}
+.divModificarLibro{
+    border: 1px solid black;
+    width: 40%;
+    margin: 150px auto;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(132, 202, 132, 0.842),rgb(187, 186, 186));
+}
+.formModificarLibro{
+    padding: 25px;
+    width: 50%;
+    margin: auto;
+}
+.formModificarLibro div{
+    margin-bottom: 40px;
+}
+.formModificarLibro div:first-child{
+    margin-left: 20px;
+}
+.formModificarLibro div:nth-child(2){
+    width: 50%;
+    margin: auto;
+}
+.formModificarLibro div:nth-child(2) input{
+    font-weight: bold;
+    padding: 5px 13px;
+    background-color: #008747;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.formModificarLibro div:nth-child(2) input:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+}
+.pu , .st{
+    width: 50px;
+    padding-left: 5px;
+}
+
+.botonSubmit1{
+    width: 50%;
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    background-color: #008747;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.botonSubmit1:hover , .botonSubmit2:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+}
+.botonSubmit2{
+    width: 50%;
+    margin: 0 60px 30px 0;
+    font-weight: bold;
+    float: right;
+    padding: 5px 0;
+    background-color: #008747;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.edit{
+    width: 30%;
+    height: 30%;
+}
+
+.act{
+    width: 40%;
+    height: 40%;
+}
+
+.desac{
+    width: 30%;
+    height: 30%;
+}
+
+.picD{
+    width: 30%;
+    height: 30%;
+}
+
+.title{
+    float: right;
+    margin: 50px 35% 0 30px ;
+}
+.descr{
+    border: 1px solid;
+    width: 30%;
+    padding: 20px;
+    float: right;
+    margin: 0 20% 0 50px ;
+}
+
+.buscador{
+    margin-bottom: 30px;
+    margin-left: 205px;
+}
+.buscador input[type=text]{
+    border: 2px solid black;
+    padding: 3px 10px;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.plus{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 0 35px 50px 0;
+}
+
+.desc{
+    display: flex;
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.desc a:hover{
+    box-shadow: 5px 5px 5px grey;
+}
+.desc a{
+    margin: 0 5px;
+    padding: 10px;
+    font-weight: bold;
+    color: green;
+    border: 1px solid green;
+    border-radius:50px ;
+}
+
+.lupaAdmin{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 35px;
+    top: 6px;
+    background-color: #28B828;
+    padding: 0.5px 4px;
+}
+
+.noResult{
+    background-color: rgb(219, 216, 216);
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    font-weight: bold;
+}
+.noResult p{
+    font-size: 30px;
+    padding-bottom: 80px;
+    margin: 30px 0 20px 40px;
+    text-align:center;
+}
+.noResult a{
+    border: 1px solid black;
+    color: white;
+    background-color: #000;
+    padding: 20px;
+}
+.noResult div{
+    width: fit-content;
+    margin: 10px auto 50px auto;
+}
+
+.añadirLibro{
+    text-align: center;
+    margin : 30px auto 50px auto;
+    border-bottom: 3px solid #008747;
+    width: fit-content;
+}
+
+/*************************************************************************************** PARTE CATEGORIAS ************************************************************************************/
+.icon{
+    width:50px;
+    height:50px;
+}
+
+.formCategorias{
+    display: grid;
+    width:40%;
+    margin:0 auto;
+    border: 1px solid black;
+    padding:3% 0;
+}
+
+.formCategorias input:nth-child(3){
+    width:12% !important;
+    margin: 0 auto;
+    padding:5px 0;
+}
+
+.formCategorias input:nth-child(2){
+    width:40% !important;
+    margin: 0 auto;
+    margin-bottom:3%;
+    padding:5px 0;
+}
+
+.formCategorias h2{
+    margin:0 auto;
+    margin-bottom:3%;
+}
+
+/**********admin categorias***********/
+.maincatdiv{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.maincatdiv a, .comeback a{
+    text-align: center;
+    text-decoration: none;
+    margin-left: 38%;
+    margin-right: 38%;
+    background-color: #008747;
+    border-radius: 60px;
+    color: #fff;
+    padding: 1%;
+    margin-bottom:1%;
+}
+.maincat nav{
+    text-align: center;
+}
+.maincat h2{
+    text-align: center;
+    border-bottom:3px solid #008747;
+    margin-left:45%;
+    margin-right:45%;
+    margin-bottom:2%;
+    padding-top:1%;
+}
+.comeback{
+    text-align:center;
+    margin-top:2%;
+}
+
+/*************************************************************************************** PARTE PEDIDOS ************************************************************************************/
+
+/*finestra emergent*/
+#principalAdmin{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows:100px 1fr 2fr;
+}
+#titolDetallesPedidoAdmin{
+    grid-area: 1 / 1 / span 1 / span 2;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background-color: #386B41;
+    width: 100%;
+}
+#pedidoAdmin{
+    grid-area: 2 / 1;
+    padding-left: 40%;
+}
+#clienteAdmin{
+    grid-area: 2 / 2;
+}
+#librosAdmin{
+    grid-area: 3 / 1 / span 3 / span 2;
+}
+#librosAdmin h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*mostrar todo*/
+#mostrarTodosAdmin{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-rows:100px 50px 500px;
+}
+#buscadorPedido{
+    padding-left: 10%;
+}
+#mostrarTodosAdmin h3{
+    text-align: center;
+}
+#mostrarTodosAdminTabla{
+    overflow: auto;
+}
+/*cambiar estado*/
+#cambiarEstado{
+    width: 100%;
+    margin: auto;
+}
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+  }
+
+#cambiarEstadoPedido{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+#cambiarEstadoPedido input{
+    margin-top: 10px;
+}
+#cambiarEstadoPedido p{
+    margin-top: 10px;
+}
+#submitCambiarEstado{
+    width: 100px;
+    height: 30px;
+}
+
+/*************************************************************************************** FORM CLIENTE ************************************************************************************/
+.containerC{
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex; 
+    margin-top: 20px;
+}
+.backbox{  
+    background: linear-gradient(135deg , rgb(158, 158, 158) 10%, rgb(167, 222, 162) 80%); 
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    transform: translate(0,-50%);
+    top:50%;
+    display: inline-flex;
+    border: 2px solid black;
+}
+  
+.frontbox{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    position: absolute;
+    right:0;
+    margin-right: 3%;
+    margin-left: 3%;
+    transition: right .8s ease-in-out;
+}
+ 
+.loginMsg{
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+  
+.loginMsg .titleC{
+    font-weight: 300;
+    font-size: 23px;
+}
+  
+.loginMsg p{
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+  
+.textcontent{
+    color:white;
+    margin-top:65px;
+    margin-left: 12%;
+}
+  
+.loginMsg a{
+    background-color: #404040;
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    font-size: 12px;
+    box-sizing: content-box;
+    font-weight: 300;
+    padding:10px;
+}
+  
+  /* front box content*/
+.login{
+    padding: 20px;
+    text-align: center;
+}
+  
+.login h2{
+    color: #35B729;
+    font-size:25px;
+}
+
+.login img{
+    width: 30%;
+    height: 30%;
+}
+.inputbox{
+    margin-top:30px; 
+}
+
+.login input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom:20px;
+    font-size: 12px;
+    padding-left: 15px;
+}
+  
+.buttom{
+    background-color: #35B729;
+    border: none;
+    color:white;
+    font-size: 15px;
+    padding:10px 20px;
+    border-radius: 10px;
+    /* margin-right: 20px;
+    float: right; */
+    cursor: pointer;
+}
+
+.divbuttom{
+    width: 40%;
+    margin: auto;
+}
+  
+  /* Fade In & Out*/
+.login p {
+    cursor: pointer;
+    color:#404040;
+    font-size:15px;
+}
+  
+.loginMsg{
+    transition: opacity .8s ease-in-out;
+}
+  
+.visibility{
+    opacity: 0;
+}
+  
+.hide{
+    display: none;
+}
+
+/************************************************FORM ALTA CLIENTE***************************/
+.formAltaUsu h1{
+    display:flex;
+    justify-content: center;
+    color:#fff;
+    padding-bottom:1%;
+}
+
+.formAltaUsu{
+    border: 2px solid black;
+    background: linear-gradient(#7a997f, #88d897); 
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 9%;
+    border-radius:10px;
+    margin-top:5%;
+
+}
+
+.loginAltaUsu{
+    display:grid;
+    margin-top:5%;
+    row-gap:20%;
+    width:100%;
+    grid-template-columns: 40% 40%;
+    column-gap:10%;
+    justify-content: center;
+}
+
+.loginAltaUsu p{
+    font-size:12px;
+    margin:0;
+    color:#fff;
+}
+
+.loginAltaUsu input{
+    padding:2% 0;
+    text-align: center;
+}
+
+.loginAltaUsu input:last-child{
+    width: 50%;
+    margin: 0 auto;
+    background: green;
+    border: none;
+    border-radius: 60px;
+    color: #fff;
+    padding: 20% 120% 20% 20%;
+    cursor: pointer;
+  }
+
+/****************************Form alta usu**********************/
+#altaUsu{
+    background-color: #008747;
+    width:40% !important;
+    text-align: center !important;
+    color:#fff !important;
+    border:none !important;
+    border-radius: 60px !important;
+    height:120% !important;
+    padding:3% !important;
+}
+
+#altaUsu:hover{
+    cursor:pointer !important;
+}
+/******************************************* FORM PERFIL CLIENTE **************************************************************************************/
+.formPerfil{
+    width: 60%;
+    margin: 5px 0 0 25%  ;
+    background-color: #dfdbdb;
+    padding: 10px 0 20px 15px;
+}
+
+.miPerfil{
+    width: 20%;
+    margin : auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formPerfil div p:first-child{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.formPerfil div p:nth-child(2){
+    padding-left: 10px;
+}
+
+.formPerfil div{
+    margin: 20px;
+    border-bottom: 2px solid #087528;
+    padding: 10px 0 20px 0;
+}
+
+.formPerfil div:last-child , .formPerfil div:first-child{
+    border-bottom: none;
+}
+
+.editProfile{
+    width: 95%;    
+}
+
+.editProfile a{
+    float: right;
+    color: #087528;
+    margin-right: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.editProfile a:hover{
+    text-shadow:2px 2px 8px rgb(54, 253, 54) ;
+}
+/******************************************* FAVORITOS **************************************************************************************/
+.buscMenu input{
+    padding: 5px 0;
+    width: 73%;
+}
+#buscador{
+    padding: 0 0 20px 0;
+}
+#search2{
+    border:1px solid black;
+    padding: 10px;
+}
+.lupaMenu{
+    width: 20px !important;
+    position: relative;
+    right: 50px;
+    top: 13px;
+    padding: 9px 12px 6px 12px !important;
+    background-color: #28B828;
+}
+
+.menuVertival{
+    margin-top: 60px !important;
+}
+
+ul.menuVertival , ul.menuVertical{
+    position:relative;
+    background:#fff;
+    width:20%;
+    margin: 10px 0 100px 20px;
+    padding:0;
+    list-style: none;
+    border-radius: 5px;	
+    float: left;
+}
+
+.menuVertival li, .menuVertical li {
+    padding:30px 0 30px 20px;
+}
+
+.menuVertival li a, .menuVertical li a{
+    width:225px;
+    line-height:50px;
+    display:block;
+    position:relative;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight: bold;
+    color: #7a7a7a;	
+}
+
+.menuVertival li a:hover, .menuVertical li a:hover{
+    color: white;
+}
+
+#first {
+    border-left:5px solid #008747;
+}
+#first:hover {
+    background-color: #008747;
+}
+
+#second{
+    border-left:5px solid #fecf54;
+}
+#second:hover {
+    background-color: #fecf54;
+}
+
+#third {
+    border-left:5px solid #cf2130;
+}
+#third:hover {
+    background-color: #cf2130;
+}
+
+#fourth {
+    border-left:5px solid blue;
+}
+#fourth:hover {
+    background-color: blue;
+}
+.menuVertival li img, .menuVertical li img{
+    width: 15%;
+    height: 15%;
+    float: left;
+    padding-right: 10px;
+}
+
+.favorTitle{
+    width: 22%;
+    margin: auto;
+    border-bottom: 5px solid #386B41 ;
+    text-align: center;
+}
+
+.zeroRows{
+    width: 40%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #dfdbdb;
+    padding: 40px;
+}
+
+.imgFav{
+    width: 100%;
+    height:280px;
+    border: 1px solid black;
+}
+
+.price{
+    width: 50%;
+    padding: 2px;
+    color: #087528;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.librosFav{
+    margin:20px auto;
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.tituloLibro{
+    font-weight: bold;
+    text-align: center;
+}
+
+#corazon{
+    height: 10%;
+    width : 10%;
+    float: right;
+    margin-right: 20px;
+}
+
+.numFav{
+    width: 45%;
+    margin: 5% auto 0 auto;
+}
+
+
+/* ***************************************************** DETALLE LIBRO CLIENTE ***********************************************/
+.divimagenLibro{
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.5)
+}
+
+.corason{
+    width:40px !important;
+    height:40px !important;
+    float:right !important;
+    z-index: 1;
+    top: 45px !important;
+    right: 5px !important;
+    position: relative !important;
+    border: none !important;
+}
+
+.img1{
+    width: 40px;
+    height: 50px;
+    position: relative;
+    right: 50px;
+    z-index:2;
+}
+.img1:hover{
+    -webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+}
+.img2{
+    width: 100%;
+    height: 100%;
+}
+
+.divTituloLibro{
+    width: 400px;
+    font-size: x-large;
+    margin-top: 80px;
+}
+
+.divAutorLibro{
+    margin: 20px;
+    width: 50%;
+}
+
+.divEditLibro{
+    margin: 20px;
+    width: 50%
+}
+.divDescriLibro{
+    margin: 70px 20px;
+    width: 90%;
+    background-color: #dfdbdb;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.divPrecioLibro{
+    margin: 20px;
+    width: fit-content;
+    background-color: #abd8c3;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#div1{
+    display: flex;
+    height: 550px;
+    width: 70%;
+    margin: 100px auto;
+}
+
+.botonAñadir{
+    display: flex;
+    width: 70%;
+    padding: 10px 50px;
+    background-color: #008747;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.botonAñadir img{
+    width: 10%;
+    height:10%;
+    padding-top: 5px;
+    padding-right: 10px ;
+}
+
+.botonAñadir p{
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.textoDetalle{
+    margin: 18px;
+    width: 50%;
+}
+
+#cantidadLibroInput{
+    margin-left: 20px;
+    width: 40px;
+    border-radius: 5px;
+    height: 20px;
+    padding-left: 10px;
+    /* background-color: #abd8c3; */
+    border: 1px solid black;
+}
+
+.categoria{
+    margin-bottom: 20px;
+    width: fit-content;
+    font-style: italic;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: green;
+    font-weight: bold;
+}
+.ediIsbn{
+    width: fit-content;
+}
+/****************************************************************************************LIBROS CATEGORIAS****************************************************************/
+.divCategories p{
+    padding:1%;
+    background-color: #fff;
+    
+}
+
+.divCategories p:first-child{
+    padding-top: 2%;
+    font-weight: bold;
+}
+.divCategories p:last-child{
+    color:#35B729;
+    font-weight: bold;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: #dfdbdb;
+    margin-right: 5%;
+}
+
+.books div{
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 4%;
+}
+
+.books div p{
+    text-align: center;
+    
+}
+
+.books img{
+    width:200px;
+    height:300px;
+    border:1px solid black;
+}
+
+.books img:hover{
+    transform:scale(1.1);
+}
+.bksh1{
+    text-align: center;
+    border-bottom:#008747 2px solid;
+    padding-bottom:20px;
+    margin-top:0;
+    margin-bottom:3%;
+}
+
+
+/*************************CATEGORIAS FAVORITOS**********************/
+#imagenLibro .x{
+    z-index:1;
+    top:45px;
+    margin-right:150px;
+    float: right;
+    border:none;
+    transform: scale(1.1);
+}
+
+/****************************************************** Pagina Principal ***********************************************/
+
+#paginaPrincipal{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 500px 150px 50px 500px 50px 500px;
+    gap: 10px;
+    grid-template-columns:10% 80% 10%;
+    margin: auto;
+}
+/*novedades*/
+#paginaPrincipalNovedades{
+    grid-area: 4 / 2;
+}
+/*faboritos*/
+#paginaPrincipalFavoritos{
+    grid-area: 6 / 2;
+}
+/*diseño de los expositores*/
+.expocitoresMenuPrincipal{
+    width: 90%;
+    display: flex;
+    border-top: #386B41 solid 1px;
+    padding: 10px;
+    overflow: auto;
+    justify-content: space-evenly;
+}
+/*item in div*/
+.displayItem{
+    grid-area: 4 / 2;
+    width: 250px;
+    text-align: center;
+    border:#7a7a7a solid 1px;
+    margin-left: 10px;
+    padding-top: 20px;
+    background-color: #35b72915;
+    color: black;
+    margin-bottom: 30px;
+}
+.displayItem p:nth-of-type(1){
+    font-weight: bold;
+}
+.displayItem:hover{
+    background-color: #35b7293d;
+}
+.displayItem img{
+    width: 250px;
+    height: 250px;
+    object-fit:scale-down;
+}
+.displayItemMore{
+    grid-area: 4 / 2;
+    width: 250px;
+    height: 329.5px;
+    text-align: center;
+    border:#7a7a7a solid 1px;
+    margin-left: 10px;
+    padding-top: 20px;
+    background-color: #35b72915;
+    color: black;
+}
+.displayItemMore img{
+    width: 200px;
+    height: 200px;
+    object-fit:scale-down;
+    padding-top: 50px;
+}
+.displayItemMore p{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.displayItemMore:hover{
+    background-color: #35b7293d;
+}
+hr{
+    width: 80%;
+    border-top: 1px dotted #8c8b8b;
+}
+
+/*favoritos sin logear*/
+#noLogeadoPaginaPrincipalFavoritos{
+    width: 300px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 140px 140px;
+    column-gap: 20px;
+}
+#noLogeadoPaginaPrincipalFavoritos{
+    background-color: #35b7292f;
+    padding: 20px;
+    border: #8c8b8b 1px solid;
+}
+#noLogeadoPaginaPrincipalFavoritos p:nth-of-type(1){
+    grid-area: 1 / 1 / 1 / span 2;
+    text-align: center;
+    /*border-bottom: #8c8b8b 1px solid;*/
+}
+#BuscadorPaginaPrincipal p{
+   padding-top: 20px;
+}
+#noLogeadoPaginaPrincipalFavoritos a:nth-of-type(1){
+    grid-area: 2 / 1;
+}
+#noLogeadoPaginaPrincipalFavoritos a:nth-of-type(2){
+    grid-area: 2 / 2;
+}
+#noLogeadoPaginaPrincipalFavoritos a{
+    border: #8c8b8b 1px solid;
+    background-color: #35b72952;
+    text-align: center;
+    margin-bottom: -60px;
+    text-decoration: none;
+    color: black;
+}
+#noLogeadoPaginaPrincipalFavoritos a p:nth-child(1){
+    border: none;
+}
+#noLogeadoPaginaPrincipalFavoritos a:hover{
+    background-color: #35b72985;
+    color: rgb(29, 29, 82);
+    font-weight: 510;
+    margin: -5px;
+    margin-bottom: -65px;
+}
+hr{
+    margin: auto;
+}
+/*buscador*/
+#BuscadorPaginaPrincipal{
+    grid-area: 2 / 2;
+    margin: auto;
+    display: flex;
+    background-color: #008748c5;
+    padding: 5px 10px;
+    border: #8c8b8b 1px solid;
+}
+#BuscadorPaginaPrincipal input{
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    margin-left: 10px;
+    border: none;
+    border-bottom: #7a7a7a solid 1px ;
+    margin-top: 10px;
+}
+#BuscadorPaginaPrincipal p{
+    color: white;
+}
+.listaLibroBuscador{
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.listaLibroBuscador a{
+    color: black;
+}
+.listaLibroBuscador:hover{
+    background-color: #01af5ea9;
+}
+.listaLibroBuscador:hover a{
+    font-weight: 501;
+}
+#BuscadorPaginaPrincipal nav form input[type=submit]{
+    width: 100px;
+}
+/*titulos*/
+.tituloSeccionMenuPrincipal:nth-of-type(1){
+    padding-left: 10%;
+    grid-area: 3 / 2;
+}
+.tituloSeccionMenuPrincipal:nth-of-type(2){
+    padding-left: 10%;
+    grid-area: 5 / 2;
+}
+/*precentacio imatge*/
+#imagenPrecentacion{
+    grid-area: 1 / 2;
+    width: 100%;
+}
+#imagenPrecentacion  video{
+    display:block;
+    text-align:center;
+    margin: auto 0px;
+    object-fit:scale-down;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+/*Pagina principal admin*/
+#enlacesAdmin{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#enlacesAdmin a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #0f0f0f;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    border: #00874898 3px solid;
+    background-color: rgba(128, 128, 128, 0.082);
+}
+#enlacesAdmin a:hover{
+    font-weight: 600;
+    color: #008747;
+    background-color: rgba(128, 128, 128, 0.137);
+}
+#paginaPrincipalAdmin{
+    padding-top: 50px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+/********************************************************************************MODIFICAR CLIENTE**********************************************************************/
+.modUsu{
+    background-color:#dfdbdb; 
+    width: 45%;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 12%;
+    margin-top:6%;
+}  
+.modUsu h1{
+    display:flex;
+    justify-content: center;
+    color:#000;
+    padding-bottom:1%;
+}
+
+.modUsu p{
+    text-align: center;
+    color:#000;
+    font-size:16px;
+}
+
+.modUsu div{
+    margin:0 auto;
+}
+
+.modUsu div input{
+    width:100% !important;
+    padding:revert;
+    font-size:16px;
+}
+/*mostrar items en buscador resultado*/
+.mostrarProductos{
+    margin: auto;
+    display: flex;
+    width: 1200px;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+.tituloPantallaBuscar{
+    padding-left: 20%;
+}
+
+/***************************************************************MIS PEDIDOS**********************************/
+#detalleP{
+    background-color: green;
+    border-radius: 60px;
+    padding: 4%;
+    color: #fff;
+}
+.mP{
+    background-color: #dfdbdb !important;
+    width: 70% !important;
+    margin-left:22% !important;
+    margin-top:100px !important;
+    height:700px !important;
+}
+.mP p{
+    padding:5%;
+}
+
+#tablaP1{
+    display: inline-block;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    margin-top: 3%;
+}
+
+.tablaP, .tablaP0{
+    padding-top:3%;
+}
+
+.tablaP td{
+    padding:0.5%;
+}
+
+.tablaP img{
+    height:90px;
+    width:70px;
+}
+
+.imgDet{
+    width:100px;
+    height: 150px;
+}
+/*Esperar peticiones*/
+#esperandoPeticion{
+    width: 100%;
+    color: black;
+}
+#esperandoPeticion img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/******************************************************************************** CARRITO **********************************************************************/
+.divLibrosC{
+    width: 90%;
+}
+
+.libroCarrito{
+    border-top: 1px solid green;
+    background-color: rgb(241, 240, 240);
+    padding: 10px 0;
+}
+.divCompra{
+    border: 1px solid black;
+    width: 35%;
+    margin-left: 5%;
+    height:200px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: rgb(241, 240, 240);
+
+}
+.divCompra h3{
+    margin-bottom: 30px;
+}
+.divButton a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.divButton{
+    width: 80%;
+    background-color: black;
+    margin: 10% auto 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+.divCompra span{
+    font-weight: bold ; 
+    float:right;
+    margin-right: 20px;
+}
+.libroCarrito div:first-child div:first-child{
+    padding: 10px;
+    width: 15%;
+}
+
+.divTitu a:hover{
+    text-shadow: 3px 3px 4px #008747;
+}
+
+.libroCarrito img{
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px black;
+}
+.libroCarrito img:hover{
+    width:105%;
+}
+.libroCarrito div:first-child{
+    display: flex;
+}
+.libroCarrito div:first-child div{
+    margin: 0 15px;
+}
+
+.divPreu{
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+.divTitu{
+    width: 70%;
+    padding-top: 25px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    height: fit-content;
+}
+.divTitu a{
+    color : black;
+}
+.cesta{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.pr{
+    width:fit-content;
+    float: right;
+    margin-right: 15px;
+    position: relative;
+    top:13px;
+    color: gray;
+}
+
+.libroCarrito input:first-child{
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 3px 0 3px 5px;
+    width: 50px;
+    margin-top: 40px;
+}
+.divA{
+    margin-top : 30px;
+    text-decoration: underline;
+}
+.divA a{
+    color: green;
+}
+.divA a:hover{
+    font-weight: bold;
+}
+.last{
+    width: 50%;
+    margin-left: 23%;
+    position: relative;
+    bottom: 140px;
+    height: 10px;
+}
+.aut{
+    margin-left: 8px;
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+}
+.stock10{
+    background-color: rgba(216, 127, 127, 0.788);
+    width:80px;
+    padding: 6px 5px;
+    margin-left: 35px;
+    position: relative;
+    bottom: 60px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.subtotal{
+    border-top:1px solid gray;
+    width: 40%;
+    margin-right: 10px;
+    padding: 5px 0;
+    margin: 0 10px 10px 58%;
+    height: 20px;
+}
+.subtotal p{
+    float: right;
+}
+
+/* Cesta vacia */
+.cestaVacia{
+    width: 50%;
+    margin: 70px auto;
+    background-color: rgb(241, 240, 240);
+    border-radius: 5px;
+    padding-top: 20px;
+}
+.imgCestaVacia{
+    width: 30%;
+    height: 85%;
+    margin:10px auto;
+}
+.imgCestaVacia img{
+    width: 100%;
+}
+.cestaVacia h4{
+    width: fit-content;
+    margin: 20px auto;
+}
+.cestaVacia a{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+    font-weight: bold;
+}
+.cestaVacia div:last-child{
+    width: fit-content;
+    margin: 50px auto;
+    padding-bottom: 70px;
+}
+/*Confirmar compra*/
+#listarSimplePedido{
+    width: 500px;
+    margin: auto;
+}
+#listarSimplePedido h3{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+#listarSimplePedido p{
+    margin-left: auto; 
+    margin-right: 0;
+    width: fit-content;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border-bottom: #008747 solid 1px;
+    background-color: #35b72915;
+}
+#listarSimplePedido table tr td{
+    background-color: #35b72915;
+    border-color:#008747;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#listarSimplePedido table tr th{
+    background-color: #35b72915;
+    border: transparent;
+    border-radius: 20px 20px 0px 0px;
+}
+#listarSimplePedido table{
+    border: none;
+    width: 500px;
+    font-size: 12px;
+}
+#ConfirmarPagar{
+    padding-top: 20px;
+    display: flex;
+    width: 500px;
+    margin: auto;
+}
+#ConfirmarPagar a{
+    background-color: #35b72915;
+    padding: 5px 10px;
+    border-radius: 20px 0px 20px 0px;
+    border-bottom: #008747 solid 1px;
+    width: fit-content;
+    display: block;
+    margin-left: 0; 
+    margin-right: auto;
+    text-decoration: none;
+    color: black;
+}
+#ConfirmarPagar a:hover{
+    background-color: #19880f65;
+}
+#ConfirmarPagar a{
+    width: fit-content;
+    display: block;
+    margin-left: auto; 
+    margin-right: 0;
+}
+#ConfirmarPagar a:first-of-type{
+    width: fit-content;
+    display: block;
+    margin-left: 0; 
+    margin-right: auto;
+}
+/* pedido realizado con exito*/
+#pedidoRealizadoDiv{
+    padding-top: 52px;
+    padding-bottom: 25px;
+    width: 40%;
+    margin: 7% auto;
+    height: 370px;
+    text-align: center;
+    border: 3px solid green;
+    background-color: rgb(221 221 221);
+    border-radius: 13px;
+}
+#pedidoRealizadoDiv img{
+    height: 142px;
+}
+.pedidoRealizado{
+    text-align: center;
+    color: #008747;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px 0;
+}
+#pedidoRealizadoDiv a{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+#pedidoRealizadoDiv p:first-child{
+    margin-bottom: 50px;
+}
+/*Error try catch*/
+.errorChatch{
+    margin: auto;
+    width: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+.descri a{
+    color: green;
+    font-weight: bold;
+}
+.descri a:hover{
+    color: blue;
+}
+
+/* ******************************************** RESPONSIVE******************************************************************** */
+
+/*ajustes tablet pagina principal*/
+@media (max-width: 1023px) and (min-width: 768px) {
+    /*division tamaño*/
+    #paginaPrincipal{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 500px 150px 50px 550px 50px 550px;
+        gap: 10px;
+        grid-template-columns:10% 80% 10%;
+        margin: auto;
+    }
+    /*diseño de los expositores*/
+    .expocitoresMenuPrincipal{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: #386B41 solid 1px;
+        padding: 10px;
+        overflow: auto;
+        justify-content: space-evenly;
+    }
+    /*item in div*/
+    .displayItem{
+        grid-area: 4 / 2;
+        width: 150px;
+        text-align: center;
+        border:#7a7a7a solid 1px;
+        margin-left: 10px;
+        padding-top: 20px;
+        background-color: #35b72915;
+        color: black;
+    }
+    .displayItem img{
+        width: 150px;
+        height: 150px;
+        object-fit:scale-down;
+    }
+    .displayItemMore{
+        grid-area: 4 / 2;
+        width: 150px;
+        height: 229.5px;
+        text-align: center;
+        border:#7a7a7a solid 1px;
+        margin-left: 10px;
+        padding-top: 20px;
+        background-color: #35b72915;
+        color: black;
+    }
+    .displayItemMore img{
+        width: 100px;
+        height: 100px;
+        object-fit:scale-down;
+        padding-top: 50px;
+    }
+    #imagenPrecentacion {
+        margin: 0 auto;
+    }
+    /*mostrar items en buscador resultado*/
+    .mostrarProductos{
+        margin: auto;
+        display: flex;
+        width: 750px;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        gap: 10px;
+    }
+    .tituloPantallaBuscar{
+        padding: 0%;
+        text-align: center;
+    }
+
+    .modUsu{
+        margin-left: 220px !important;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 150px !important;
+        width: 55%;
+        margin-top: 170px !important;
+    }
+
+    .books{
+        grid-template-columns: 50% 50%;
+        margin: 10px auto 0 auto !important;
+        width: 70%;
+    }
+    .divCategories{
+        margin-left: 20px !important;
+    }
+    .lupaMenu{
+        display: none;
+    }
+    
+    #search2{
+        width:85%;
+    }
+
+    .numFav{
+        width:50%;
+        margin-left: 50%;
+        margin-top: 8%;
+        font-size: 23px;
+    }
+
+    .zeroRows{
+        width: 150%;
+    }
+
+    .tablaP0 td{
+        width: 1%;
+        font-size:15px;
+    }
+
+    .tablaP{
+        width: 100%;
+    }
+    .tablaP td{
+        width:20px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mP{
+        background-color: #dfdbdb !important;
+        width: 70% !important;
+        margin-left: 200px !important;
+        padding-right: 40px !important;
+        padding-left: 10px !important;
+        margin-top: 100px !important;
+        height: 700px !important;
+    }
+
+    #logo{
+        font-size:20px;
+    }
+    #logo a{
+        letter-spacing: 1px;
+        font-size: 25px;
+    }
+
+    #container img:first-child{
+        margin: 10px 5px 10px 20px;
+    }
+    .element4 a{
+        margin-left: 20px;
+    }
+    .element1 a{
+        display: none;
+    }
+    .box{
+        padding:0;
+        margin: 0;
+    }
+    .textoDetalle {
+        width: fit-content;
+        margin: 20px 0;
+    }
+    ul.menuVertival{
+        width: 20%;
+    }  
+    .menuVertival li a , .menuVertical li a{
+        font-size: 12px;
+    }
+
+    .divimagenLibro{
+        width: 250px;
+        height: 350px;
+        margin-top:100px;
+    }
+    .divTituloLibro{
+        font-size: 15px;
+    }
+    .miPerfil{
+        width: 30%;
+        margin-top: 50px;
+    }
+    .favorTitle{
+        width:30%;
+    }
+    .img1{
+        position: relative;
+        top: 70px;
+    }
+    .cestaVacia{
+        margin-top: 200px;
+        width: 80%;
+    }
+    footer a{
+        width:20%;
+        padding-top: 20px;
+    }
+    .containerC{
+        width:700px;
+        position: relative;
+        top: 320px;
+    }
+    .cesta{
+        display: block;
+    }
+    .divLibrosC{
+        width: 100%;
+    }
+    .aut{
+        margin-top: 30px;
+    }
+    .stock10{
+        margin-left: 29px;
+        bottom: 86px;
+        width: fit-content;
+    }
+    .libroCarrito input[type=submit]{
+        width: 50%;
+        font-weight: bold;
+    }
+    .divCompra{
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .divButton{
+        margin-top: 10%;
+    }
+    .login input , .loginMsg a{
+        font-size: 18px;
+    }
+    .buttom{
+        font-size: 22px;
+    }
+    .formAltaUsu{
+        margin-top: 30%;
+        width: 83%;
+        height: 270px;
+    }
+    .loginAltaUsu p{
+        font-size: 16px;
+    }
+    .loginAltaUsu input{
+        font-size: 19px;
+    }
+    b{
+        position: relative;
+        left : 15px;
+    }
+    .element5{
+        margin: 0 40px 0 10px !important;
+    }
+    .formPerfil{
+        margin-left: 190px;
+        width: 70%;
+    }
+    .divDescriLibro{
+        width: 80%;
+    }
+    .botonAñadir{
+        width: 65%;
+    }
+    .ediIsbn{
+        width: 200px;
+    }
+    #div1{
+        margin: 5px auto 65% auto;
+    }
+    #container .element1 , .element1 a , #container .lupa{
+        display: none;
+    }
+    #container input{
+        width: 100px;
+        margin-right: 30px;
+        padding: 5px;
+    }
+}
+/* ------------------------------------------------------------------------------ */
+/*ajustes movil pagina principal*/
+@media (max-width: 767px) and (min-width: 601px){
+    #paginaPrincipal{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 200px 150px 50px 580px 50px 580px;
+        gap: 10px;
+        grid-template-columns:10% 80% 10%;
+        margin: auto;
+    }
+}
+@media (max-width: 600px){
+    #paginaPrincipal{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 200px 150px 50px 880px 50px 880px;
+        gap: 10px;
+        grid-template-columns:10% 80% 10%;
+        margin: auto;
+    }
+}
+@media (max-width: 767px){
+    .formAltaUsu{
+        margin-top: 15%;
+        width: 83%;
+        height: 750px;
+    }
+    #altaUsu{
+        padding:5%;
+        width:70%;
+    }
+    .loginAltaUsu{
+        grid-template-columns: 80%;
+    }
+
+    .formAltaUsu h1{
+        font-size:22px;
+    }
+    #imagenPrecentacion {
+        margin: auto;
+    }
+    /*diseño de los expositores*/
+    .expocitoresMenuPrincipal{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: #386B41 solid 1px;
+        padding: 10px;
+        overflow: auto;
+        justify-content: space-evenly;
+        
+    }
+    /*item in div*/
+    .displayItem{
+        grid-area: 4 / 2;
+        width: 150px;
+        text-align: center;
+        border:#7a7a7a solid 1px;
+        margin-left: 10px;
+        padding-top: 20px;
+        background-color: #35b72915;
+        color: black;
+       
+    }
+    .displayItem img{
+
+        width: 120px;
+        height: 120px;
+        object-fit:scale-down;
+    }
+    .displayItemMore{
+        grid-area: 4 / 2;
+        width: 150px;
+        height: 199.5px;
+        text-align: center;
+        border:#7a7a7a solid 1px;
+        margin-left: 10px;
+        padding-top: 20px;
+        background-color: #35b72915;
+        color: black;
+    }
+    .displayItemMore img{
+        width: 100px;
+        height: 100px;
+        object-fit:scale-down;
+        padding-top: 20px;
+    }
+    #imagenPrecentacion {
+        margin: auto;
+    }
+
+    #container{
+        padding-left: 5px;
+    }
+    #imagenPrecentacion {
+        margin: auto;
+    }
+    /*diseño de los expositores*/
+    .expocitoresMenuPrincipal{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: #386B41 solid 1px;
+        padding: 10px;
+        overflow: auto;
+        justify-content: space-evenly;
+        
+    }
+    /*item in div*/
+    .displayItem{
+        grid-area: 4 / 2;
+        width: 150px;
+        text-align: center;
+        border:#7a7a7a solid 1px;
+        margin-left: 10px;
+        padding-top: 20px;
+        background-color: #35b72915;
+        color: black;
+    }
+    .displayItem img{
+        width: 120px;
+        height: 120px;
+        object-fit:scale-down;
+    }
+    .displayItemMore{
+        grid-area: 4 / 2;
+        width: 150px;
+        height: 199.5px;
+        text-align: center;
+        border:#7a7a7a solid 1px;
+        margin-left: 10px;
+        padding-top: 20px;
+        background-color: #35b72915;
+        color: black;
+    }
+
+    .displayItemMore img{
+        width: 100px;
+        height: 100px;
+        object-fit:scale-down;
+        padding-top: 20px;
+    }
+
+    #imagenPrecentacion {
+        margin: auto;
+    }
+
+    .modUsu{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 450px !important;
+        width: 100%;
+    }
+
+    #modusu{
+        grid-template-columns: 100%;
+
+    }
+    .imgDet{
+        width:50px;
+        height: 50px;
+    }
+
+    .mP .tablaP0 td{
+        padding:6px !important;
+    }
+
+    .tablaP0{
+        padding-top:5%;
+        font-size: 10px;
+    }
+
+    #supr{
+        display: none;
+    }
+
+    #tablaP1{
+        text-align: center;
+        margin-left: 10%;
+        display: contents;
+    }
+
+    #tablaP1 h2{
+        text-align: center !important;
+    }
+    .tablaP img{
+        width:30px;
+        height:60px;
+    }
+
+    .tablaP{
+        font-size:11px;
+    }
+
+    .mP{
+        background-color: #dfdbdb !important;
+        width: 100% !important;
+        margin-top: 0px !important;
+        height: 200px !important;
+        margin-left: 00px !important;
+    }
+
+    .books{
+        grid-template-columns: 10%;
+        margin-left: 10% !important;
+    }
+    .books div{
+        margin-left: 33px !important;
+    }
+    .numFav{
+        margin-left: 140px;
+    }
+    .lupaMenu{
+        display: none;
+    }
+
+    .miPerfil{
+        width:30%;
+    }
+    .searcher{
+        display:none;
+    }
+    #logo a{
+        font-size: 17px;
+        letter-spacing: 0;
+    }
+    .mostrarProductos{
+        margin: auto;
+        display: flex;
+        width: 550px;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        gap: 10px;
+    }
+    .tituloPantallaBuscar{
+        padding: 0%;
+        text-align: center;
+    }
+    #container form , #container .element1{
+        display: none;
+    }
+    .menuVertical , .menuVertival{
+        display: none;
+    }
+
+    .cestaVacia{
+        width: 80%;
+        margin-top: 150px;
+    }
+    #div1{
+        display: block;
+        position: relative;
+        bottom: 40px;
+    }
+    .divimagenLibro{
+        margin: 0 auto;
+    }
+    .img1{
+        bottom: 520px;
+        left: 270px;
+    }
+    .textoDetalle{
+        position: relative;
+        bottom: 50px;
+        width: 90%;
+        right: 41px;
+    }
+    .ediIsbn{
+        width: 295px;
+    }
+    .botonAñadir{
+        width: 70%;
+        margin-bottom: 80px;
+    }
+    .botonAñadir img{
+        display: none;
+    }
+    .divDescriLibro{
+        width: 100%;
+    }
+    footer{
+        display: none;
+    }
+    .divPrecioLibro{
+        margin-bottom: 30px;
+    }
+    .divCompra , .cesta h1{
+        display: none;
+    }
+    .cesta{
+        width: 100%;
+    }
+
+    .libroCarrito div:first-child div:first-child{
+        width: 35%;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .divTitu{
+        position: relative;
+        bottom: 20px;
+        margin-left: 3px !important;
+        font-size: 13px;
+        font-weight: bold;
+        width: 165px;
+    }
+
+    .last{
+        margin-left: 106px;
+        margin-top: 37px;
+        position: relative;
+        bottom: 114px;
+    }
+    .aut{
+        width: 300px;
+        font-size: 11px;
+    }
+    .pr{
+        top: 2px;
+        font-size: 15px;
+        left: 9px;
+    }
+    .divPreu{
+        position: relative;
+        left: 57px;
+        bottom: 11px;
+    }
+    .last form input[type="submit"]{
+        background-color: green;
+        color: white;
+    }
+    .last form{
+        width: 250px;
+        position: relative;
+        bottom: 20px;
+    }
+    .divA{
+        position: relative;
+        bottom: 23px;
+    }
+    .favorTitle{
+        width: fit-content;
+    }
+    .miPerfil{
+        width: fit-content;
+    }
+    .formPerfil{
+        width: 80%;
+        margin: 5px 31px;
+    }
+    .backbox{
+        background: transparent;
+        border: transparent;
+    }
+    .frontbox{
+        right: 122px;
+        background: linear-gradient(135deg , rgb(158, 158, 158) 10%, rgb(167, 222, 162) 80%);
+    }
+    .loginMsg a{
+        background-color: transparent;
+        color: black;
+        text-decoration: underline;
+        position: relative;
+        top: 263px;
+        left: 316px;
+        border: transparent;
+        font-weight: bold;
+    }
+    .textcontent p{
+        display: none;
+    }
+    
+    .logoPic img{
+        margin: 20px 0 !important;
+        height: 30px !important;
+        width: 30px !important;
+    }
+    #container .element2{
+        font-size: 13px;
+        width: 100px;
+        line-height: 80px;
+        position: absolute;
+        right: 114px;
+    }
+    #container .element5 img{
+        height: 30px;
+        width: 30px;
+        padding-top: 11px;
+    }
+    #container .element5{
+        position: absolute;
+        right: 149px;
+        width: 50px;
+        top: 3px;
+    }
+    #container .element4{
+        font-size: 13px;
+        position: relative;
+        left: 35px;
+        line-height: 80px;
+    }
+    b{
+        font-size: 13px;
+        left: 57px;
+        bottom: 136px;
+    }
+    .perfil{
+        height: 30px !important;
+        width: 30px !important;
+        position: relative;
+        bottom: 119px;
+        right: 8px;
+    }
+    .usuario{
+        position: relative;
+        left: 41px;
+        line-height: 118px !important;
+        width: 150px;
+        top: 118px;
+    }
+    .zeroRows{
+        width: 250px !important;
+        margin-top: 0px;
+        padding: 30px;    
+    }
+    .mm{
+        bottom: 177px;
+    }
+    .tb{
+        width:20%;
+    }
+    .mP{
+        background-color: #dfdbdb !important;
+        width: 100% !important;
+        margin-top: 0px !important;
+        height: 600px !important;
+        margin-left: 00px !important;
+    }
+    .divAutorLibro {
+        width: 90%;
+    }
+
+    @media (max-width: 767px) and (min-width: 401px){
+        .tb{
+            width:80% !important;
+        }
+    }
+
+
+}
+

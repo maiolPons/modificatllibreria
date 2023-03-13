@@ -1,0 +1,349 @@
+body{
+    font-family: sans-serif;
+    height: 100%;
+    margin-bottom: 20%;
+}
+/**************************************************************************************HEADER*****************************************************************************/
+    /* Header general */
+#menu ul , #menuAd ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+   
+/* items del menu */
+   
+#menu ul li {
+    background-color:#386B41;
+    width:25%;
+}
+   
+/* enlaces del menu */
+   
+#menu ul a , #menuAd ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+   
+/* items del menu */
+   
+#menu ul li , #menuAd ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+   
+/* efecto al pasar el ratón por los items del menu */
+   
+#menu ul li:hover , #menuAd ul li:hover{
+    background:#34EB55;
+}
+   
+/* menu desplegable */
+   
+#menu ul ul , #menuAd ul ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+   
+/* items del menu desplegable */
+   
+#menu ul ul li , #menuAd ul ul li {
+    float:none;
+    width:277.5%;
+}
+   
+/* enlaces de los items del menu desplegable */
+   
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+   
+/* items del menu desplegable al pasar el ratón */
+   #menu ul li:hover > ul {
+    display:block;
+}
+
+#menu , #menuAd{
+    width:100%; 
+    height:100px;
+}
+
+header{
+    margin-bottom:2%;
+}
+
+header a{
+    font-size:26px; 
+    text-decoration: none;
+}
+
+    /* Header administrador */
+
+#menuAd ul li {
+    background-color:#386B41;
+    width:20%;
+}
+
+body{
+    height:100%;
+}
+/*************************************************************************************** FOOTER ************************************************************************************/
+footer p{
+    text-align: center;
+    color:#fff;
+    width: 90%;
+    
+}
+footer a{
+    background-color: #7a997f;
+    padding-top: 15px;
+    width: 10%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+
+}
+footer{
+    bottom:0;
+    position:fixed;
+    background-color:#386B41;
+    width:100%;
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 1%;
+
+}
+
+/*************************************************************************************** PARTE PRODUCTOS ************************************************************************************/
+
+a{
+text-decoration: none;
+
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#7a997f, #88d897);  
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #34EB55;
+    font-size: 12px;
+}
+
+.submit input{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0f0f0f;
+    font-size: 16px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    overflow: hidden;
+    margin-top: 20px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+    background: rgb(202, 200, 200);
+
+}
+
+.submit input:hover {
+    background: #7CEE91;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #7CEE91,
+                0 0 25px #7CEE91,
+                0 0 50px #7CEE91,
+                0 0 100px #7CEE91;
+}
+
+.submit{
+    width: 50%;
+    margin:auto;
+}
+
+table{
+    border: 1px solid;
+    margin: 10%;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+td , th{
+    border: 1px solid;
+    padding: 20px;
+    text-align: center;
+}
+.prod{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.addProd{
+    margin: 30px;
+}
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* width: 80%; */
+}
+
+.add{
+    border: 1px solid ;
+    display: block;
+}
+
+.pic{
+    height: 80%;
+    width: 80%;
+    border:1px solid;
+}
+
+.pict{
+    height: 80%;
+    width: 80%;
+}
+div > .pic{
+    padding:20px 70px 20px 70px;
+}
+
+.libros{
+    border: 1px solid;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.libros div:nth-child(2){
+    border-top: 1px solid;
+    text-align: center;
+}
+.alibros{
+    color: black;
+}
+
+.contenedorForm{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto;
+}
+
+.edit{
+    width: 30%;
+    height: 30%;
+}
+
+.act{
+    width: 40%;
+    height: 40%;
+}
+
+.desac{
+    width: 30%;
+    height: 30%;
+}
+
+.dd{
+    text-decoration:underline;
+}
+
+.picD{
+    width: 30%;
+    height: 30%;
+}
+
+.title{
+    float: right;
+    margin: 50px 35% 0 30px ;
+}
+.descr{
+    border: 1px solid;
+    width: 30%;
+    padding: 20px;
+    float: right;
+    margin: 0 20% 0 50px ;
+}
+
+.buscador{
+    margin-bottom: 30px;
+}
+
+
+
+/*************************************************************************************** PARTE CATEGORIAS ************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************************************** PARTE PEDIDOS ************************************************************************************/

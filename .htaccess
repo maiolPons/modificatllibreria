@@ -1,0 +1,19 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^miPerfil?$ index.php?controller=cliente&action=miPerfil [L]
+RewriteRule ^paginaPrincipal?$ index.php [L]
+RewriteRule ^favoritos?$ index.php?controller=libro&action=favoritos [L]
+RewriteRule ^misPedidos?$ index.php?controller=pedido&action=misPedidos [L]
+RewriteRule ^modificarPerfilI?$ index.php?controller=cliente&action=modificarPerfilI [L]
+RewriteRule ^logearCliente?$ index.php?controller=cliente&action=logearCliente [L]
+RewriteRule ^crearCliente?$ index.php?controller=cliente&action=crearCliente [L]
+RewriteRule ^resultadoBusqueda?$ index.php?controller=libro&action=resultadoBusqueda [L]
+RewriteRule ^detalleLibro/([0-9]*)$ index.php?controller=libro&action=detalleLibro&isbn=$1 [L]
+RewriteRule ^NoEsFavorito/([0-9]*)?$ index.php?controller=libro&action=NoEsFavorito&isbn=$1 [L]
+RewriteRule ^esFavorito/([0-9]*)?$ index.php?controller=libro&action=esFavorito&isbn=$1 [L]
+RewriteRule ^anyadirLibroCarrito/([0-9]*)?$ index.php?controller=libro&action=anyadirLibroCarrito&cantidad=1&isbn=$1 [L]
+RewriteRule ^formAñadir?$ index.php?controller=libro&action=formAñadir [L]
+RewriteRule ^anyadirLibroCarrito/([0-9]*)/([0-9]*)?$ index.php?controller=libro&action=anyadirLibroCarrito&isbn=$1&cantidad=$2 [L]
+RewriteRule ^detalleLibro/done/([0-9]*)?$  index.php?controller=libro&action=detalleLibro&done=yes&isbn=$1 [L]
+RewriteRule ^verCarrito?$ index.php?controller=pedido&action=verCarrito
